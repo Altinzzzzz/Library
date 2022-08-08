@@ -10,19 +10,36 @@
 </head>
 <body style = "background-color: black; color: white">
     
-    <button class = "activeBtn"> Button </button>
+    <main>
+        <header>
+            <div> Library </div>
+        </header>
+        <button class = "activeBtn"> Add a Book </button>
+        <div class = "container">
+            <div>
+                <p> Author </p>
+                <p> Title </p>
+                <p> numberOfPages </p>
+                <button class = "readClass" id = "state"> Not read </button>
+                <button class = "removeButton"> Remove </button>
+            </div>
+        </div>
+    </main>
+
     <form action = "" method = "get" class = "hideClass">
+        <div> New Book </div>
         <fieldset>
-            <label for = "authorId"> Author </label>
-            <input type = "text" id = "author" name = "authorId" required>
+            <input type = "text" id = "author" name = "authorId" placeholder = "Title" required>
         </fieldset>
         <fieldset>
-            <label for = "title"> Title </label>
-            <input type = "text" id = "title" name = "titleId" required>
+            <input type = "text" id = "title" name = "titleId" placeholder = "Author" required>
         </fieldset>
         <fieldset>
-            <label for = "numberOfPages"> NoP </label>
-            <input type = "number" id = "numberOfPages" name = "numberOfPagesId" required>
+            <input type = "number" id = "numberOfPages" name = "numberOfPagesId" placeholder = "Number of Pages" required>
+        </fieldset>
+        <fieldset>
+            <label> Read? </label>
+            <input type = "checkbox" id = "checkBox" name = "checkBoxId">
         </fieldset>
         <button type = "reset" id = "btnsubmit"> Submit </button>
     </form>
