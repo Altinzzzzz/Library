@@ -9,39 +9,32 @@
     <script src = "LibraryLogic.js" defer></script>
 </head>
 <body style = "background-color: black; color: white">
-    
-    <main>
+    <section>
         <header>
             <div> Library </div>
         </header>
         <button class = "activeBtn"> Add a Book </button>
         <div class = "container">
-            <div>
-                <p> Author </p>
-                <p> Title </p>
-                <p> numberOfPages </p>
-                <button class = "readClass" id = "state"> Not read </button>
-                <button class = "removeButton"> Remove </button>
-            </div>
         </div>
+    </section>
+    <main> 
+        <form action = "" method = "get" class = "hideClass">
+            <div id = "removeForm"> X </div>
+            <fieldset>
+                <input type = "text" id = "title" name = "titleId" placeholder = "Title" required/>
+            </fieldset>
+            <fieldset>
+                <input type = "text" id = "author" name = "authorId" placeholder = "Author" required>
+            </fieldset>
+            <fieldset>
+                <input type = "number" id = "numberOfPages" name = "numberOfPagesId" placeholder = "Number of Pages" required/>
+            </fieldset>
+            <fieldset class = "specialFieldset">
+                <label for = 'readLabel'> Have you read it yet? </label>
+                <input type = "checkbox" id = "checkBox" name = "checkBoxId">
+            </fieldset>
+            <button type = "reset" id = "btnsubmit"> Submit </button>
+        </form>
     </main>
-
-    <form action = "" method = "get" class = "hideClass">
-        <div> New Book </div>
-        <fieldset>
-            <input type = "text" id = "author" name = "authorId" placeholder = "Title" required>
-        </fieldset>
-        <fieldset>
-            <input type = "text" id = "title" name = "titleId" placeholder = "Author" required>
-        </fieldset>
-        <fieldset>
-            <input type = "number" id = "numberOfPages" name = "numberOfPagesId" placeholder = "Number of Pages" required>
-        </fieldset>
-        <fieldset>
-            <label> Read? </label>
-            <input type = "checkbox" id = "checkBox" name = "checkBoxId">
-        </fieldset>
-        <button type = "reset" id = "btnsubmit"> Submit </button>
-    </form>
 </body>
 </html>
